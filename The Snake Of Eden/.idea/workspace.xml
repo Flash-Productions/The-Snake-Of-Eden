@@ -62,9 +62,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/TouchHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="22" column="1" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,29 +71,33 @@
         <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/SingleTouchHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="120" column="1" selection-start="3325" selection-end="3325" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultiTouchHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/MultiTouchHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="133" column="41" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#690#702#0" expanded="true" />
-                <element signature="e#761#773#0" expanded="true" />
-                <element signature="e#941#1135#0" expanded="true" />
-                <element signature="e#962#974#0" expanded="true" />
-                <element signature="e#1124#1125#0" expanded="true" />
+                <element signature="e#726#738#0" expanded="true" />
+                <element signature="e#797#809#0" expanded="true" />
+                <element signature="e#976#1170#0" expanded="true" />
+                <element signature="e#997#1009#0" expanded="true" />
+                <element signature="e#1159#1160#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiTouchHandler.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/MultiTouchHandler.java">
+      <file leaf-file-name="AndroidInput.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="4" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.9509379">
+            <state line="24" column="11" selection-start="633" selection-end="633" vertical-scroll-proportion="-0.61904764">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#761#773#0" expanded="true" />
-                <element signature="e#831#843#0" expanded="true" />
-                <element signature="e#1001#1186#0" expanded="true" />
-                <element signature="e#1022#1034#0" expanded="true" />
-                <element signature="e#1175#1176#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,11 +117,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Pixmap.java" />
         <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Game.java" />
         <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Screen.java" />
         <option value="$PROJECT_DIR$/gen/com/flashproductions/android/games/TheSnakeOfEden/R.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Music.java" />
         <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AccelerometerHandler.java" />
         <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidMusic.java" />
@@ -131,6 +131,8 @@
         <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/SingleTouchHandler.java" />
         <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/TouchHandler.java" />
         <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/MultiTouchHandler.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidInput.java" />
       </list>
     </option>
   </component>
@@ -168,30 +170,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="The Snake Of Eden" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="The Snake Of Eden" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,6 +258,30 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="thesnakeofeden" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="The Snake Of Eden" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="The Snake Of Eden" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -662,19 +664,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Audio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="250" selection-end="250" vertical-scroll-proportion="0.478355" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/FileIO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="1" selection-start="465" selection-end="465" vertical-scroll-proportion="0.6991342" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="173" selection-end="173" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Graphics.java">
@@ -685,11 +677,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Music.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="4" selection-start="210" selection-end="210" vertical-scroll-proportion="0.3152639" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidFileIO.java">
@@ -719,60 +706,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Pool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="41" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="13" column="41" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/KeyboardHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="5" selection-start="2757" selection-end="2757" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#644#654#0" expanded="true" />
-            <element signature="e#709#719#0" expanded="true" />
-            <element signature="e#818#1006#0" expanded="true" />
-            <element signature="e#839#849#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="87" column="5" selection-start="2757" selection-end="2757" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/TouchHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="22" column="1" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/SingleTouchHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="1" selection-start="3325" selection-end="3325" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#690#702#0" expanded="true" />
-            <element signature="e#761#773#0" expanded="true" />
-            <element signature="e#941#1135#0" expanded="true" />
-            <element signature="e#962#974#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="120" column="1" selection-start="3325" selection-end="3325" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/MultiTouchHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="4" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.9509379">
+        <state line="133" column="41" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#761#773#0" expanded="true" />
-            <element signature="e#831#843#0" expanded="true" />
-            <element signature="e#1001#1186#0" expanded="true" />
-            <element signature="e#1022#1034#0" expanded="true" />
-            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#726#738#0" expanded="true" />
+            <element signature="e#797#809#0" expanded="true" />
+            <element signature="e#976#1170#0" expanded="true" />
+            <element signature="e#997#1009#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="338" selection-end="338" vertical-scroll-proportion="0.14718615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Input.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="11" selection-start="633" selection-end="633" vertical-scroll-proportion="-0.61904764">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
