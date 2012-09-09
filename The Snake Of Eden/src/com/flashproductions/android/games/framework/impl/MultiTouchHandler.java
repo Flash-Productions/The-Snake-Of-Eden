@@ -15,6 +15,7 @@ import com.flashproductions.android.games.framework.Pool.PoolObjectFactory;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class MultiTouchHandler implements TouchHandler
 {
     boolean[] isTouched = new boolean[ 20 ];
@@ -104,10 +105,7 @@ public class MultiTouchHandler implements TouchHandler
     {
         synchronized ( this )
         {
-            if ( pointer < 0 || pointer >= 20 )
-            { return false; }
-            else
-            { return isTouched[ pointer ]; }
+            return ! ( pointer < 0 || pointer >= 20 ) && isTouched[ pointer ];
         }
     }
 
@@ -140,9 +138,7 @@ public class MultiTouchHandler implements TouchHandler
     {
         synchronized ( this )
         {
-            int len = touchEvents.size ();
-            for ( int i = 0; i < len; i++ )
-            { touchEventPool.free ( touchEvents.get ( i ) ); }
+            for ( TouchEvent touchEvent : touchEvents ) { touchEventPool.free ( touchEvent ); }
             touchEvents.clear ();
             touchEvents.addAll ( touchEventsBuffer );
             touchEventsBuffer.clear ();

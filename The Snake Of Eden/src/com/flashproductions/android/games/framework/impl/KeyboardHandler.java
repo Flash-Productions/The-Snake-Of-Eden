@@ -68,18 +68,15 @@ public class KeyboardHandler implements OnKeyListener
 
     public boolean isKeyPressed ( int keyCode )
     {
-        if ( keyCode < 0 || keyCode > 127 )
-        { return false; }
-        return pressedKeys[ keyCode ];
+        return ! ( keyCode < 0 || keyCode > 127 ) && pressedKeys[ keyCode ];
+
     }
 
     public List<KeyEvent> getKeyEvents ()
     {
         synchronized ( this )
         {
-            int len = keyEvents.size ();
-            for ( int i = 0; i < len; i++ )
-            { keyEventPool.free ( keyEvents.get ( i ) ); }
+            for ( KeyEvent keyEvent : keyEvents ) { keyEventPool.free ( keyEvent ); }
             keyEvents.clear ();
             keyEvents.addAll ( keyEventsBuffer );
             keyEventsBuffer.clear ();

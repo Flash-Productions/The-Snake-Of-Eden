@@ -2,6 +2,8 @@
   <dictionary name="Flash">
     <words>
       <w>accel</w>
+      <w>framebuffer</w>
+      <w>pixmap</w>
     </words>
   </dictionary>
 </component>

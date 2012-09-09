@@ -79,10 +79,7 @@ public class SingleTouchHandler implements TouchHandler
     {
         synchronized ( this )
         {
-            if ( pointer == 0 )
-            { return isTouched; }
-            else
-            { return false; }
+            return pointer == 0 && isTouched;
         }
     }
 
@@ -109,9 +106,7 @@ public class SingleTouchHandler implements TouchHandler
     {
         synchronized ( this )
         {
-            int len = touchEvents.size ();
-            for ( int i = 0; i < len; i++ )
-            { touchEventPool.free ( touchEvents.get ( i ) ); }
+            for ( TouchEvent touchEvent : touchEvents ) { touchEventPool.free ( touchEvent ); }
             touchEvents.clear ();
             touchEvents.addAll ( touchEventsBuffer );
             touchEventsBuffer.clear ();

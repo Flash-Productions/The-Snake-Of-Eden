@@ -30,7 +30,7 @@ public class Pool<T>
 
     public T newObject ()
     {
-        T object = null;
+        T object;
 
         if ( freeObjects.size () == 0 )
         { object = factory.createObject (); }
