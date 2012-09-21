@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework.impl;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/9/12
  * Time: 3:00 AM
  */
@@ -75,7 +75,9 @@ public abstract class AndroidGame extends Activity implements Game
         screen.pause ();
 
         if ( isFinishing () )
-        { screen.dispose (); }
+        {
+            screen.dispose ();
+        }
     }
 
     @Override
@@ -106,7 +108,9 @@ public abstract class AndroidGame extends Activity implements Game
     public void setScreen ( Screen screen )
     {
         if ( screen == null )
-        { throw new IllegalArgumentException ( "Screen must not be null" ); }
+        {
+            throw new IllegalArgumentException ( "Screen must not be null" );
+        }
 
         this.screen.pause ();
         this.screen.dispose ();

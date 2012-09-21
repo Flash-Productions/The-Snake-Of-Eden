@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework.impl;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/2/12
  * Time: 1:28 AM
  */
@@ -11,7 +11,6 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-
 
 public class AccelerometerHandler implements SensorEventListener
 {
@@ -26,7 +25,6 @@ public class AccelerometerHandler implements SensorEventListener
         {
             Sensor accelerometer = manager.getSensorList ( Sensor.TYPE_ACCELEROMETER ).get ( 0 );
             manager.registerListener ( this, accelerometer, SensorManager.SENSOR_DELAY_GAME );
-
         }
     }
 

@@ -1,10 +1,11 @@
 package com.flashproductions.android.games.framework;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/1/12
  * Time: 2:51 AM
  */
+
 public interface Game
 {
     public Input getInput ();

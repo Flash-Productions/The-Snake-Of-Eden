@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework.impl;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/4/12
  * Time: 3:27 AM
  */
@@ -14,7 +14,6 @@ import com.flashproductions.android.games.framework.Pool.PoolObjectFactory;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class MultiTouchHandler implements TouchHandler
 {
@@ -50,9 +49,9 @@ public class MultiTouchHandler implements TouchHandler
         synchronized ( this )
         {
             int action = event.getAction () & MotionEvent.ACTION_MASK;
-            int pointerIndex = ( event.getAction () & MotionEvent.ACTION_POINTER_INDEX_MASK ) >>
-                               MotionEvent.ACTION_POINTER_INDEX_SHIFT;
-            int pointerID = event.getPointerId ( pointerIndex );
+            int pointerIndex =
+                    ( event.getAction () & MotionEvent.ACTION_POINTER_ID_MASK ) >> MotionEvent.ACTION_POINTER_ID_SHIFT;
+            int pointerId = event.getPointerId ( pointerIndex );
             TouchEvent touchEvent;
 
             switch ( action )
@@ -61,10 +60,10 @@ public class MultiTouchHandler implements TouchHandler
                 case MotionEvent.ACTION_POINTER_DOWN:
                     touchEvent = touchEventPool.newObject ();
                     touchEvent.type = TouchEvent.TOUCH_DOWN;
-                    touchEvent.pointer = pointerID;
-                    touchEvent.x = touchX[ pointerID ] = ( int ) ( event.getX ( pointerIndex ) * scaleX );
-                    touchEvent.y = touchY[ pointerID ] = ( int ) ( event.getY ( pointerIndex ) * scaleY );
-                    isTouched[ pointerID ] = true;
+                    touchEvent.pointer = pointerId;
+                    touchEvent.x = touchX[ pointerId ] = ( int ) ( event.getX ( pointerIndex ) * scaleX );
+                    touchEvent.y = touchY[ pointerId ] = ( int ) ( event.getY ( pointerIndex ) * scaleY );
+                    isTouched[ pointerId ] = true;
                     touchEventsBuffer.add ( touchEvent );
                     break;
 
@@ -73,10 +72,10 @@ public class MultiTouchHandler implements TouchHandler
                 case MotionEvent.ACTION_CANCEL:
                     touchEvent = touchEventPool.newObject ();
                     touchEvent.type = TouchEvent.TOUCH_UP;
-                    touchEvent.pointer = pointerID;
-                    touchEvent.x = touchX[ pointerID ] = ( int ) ( event.getX ( pointerIndex ) * scaleX );
-                    touchEvent.x = touchY[ pointerID ] = ( int ) ( event.getY ( pointerIndex ) * scaleY );
-                    isTouched[ pointerID ] = false;
+                    touchEvent.pointer = pointerId;
+                    touchEvent.x = touchX[ pointerId ] = ( int ) ( event.getX ( pointerIndex ) * scaleX );
+                    touchEvent.y = touchY[ pointerId ] = ( int ) ( event.getY ( pointerIndex ) * scaleY );
+                    isTouched[ pointerId ] = false;
                     touchEventsBuffer.add ( touchEvent );
                     break;
 
@@ -85,17 +84,18 @@ public class MultiTouchHandler implements TouchHandler
                     for ( int i = 0; i < pointerCount; i++ )
                     {
                         pointerIndex = i;
-                        pointerID = event.getPointerId ( pointerIndex );
+                        pointerId = event.getPointerId ( pointerIndex );
 
                         touchEvent = touchEventPool.newObject ();
                         touchEvent.type = TouchEvent.TOUCH_DRAGGED;
-                        touchEvent.pointer = pointerID;
-                        touchEvent.x = touchX[ pointerID ] = ( int ) ( event.getX ( pointerIndex ) * scaleX );
-                        touchEvent.x = touchY[ pointerID ] = ( int ) ( event.getY ( pointerIndex ) * scaleY );
+                        touchEvent.pointer = pointerId;
+                        touchEvent.x = touchX[ pointerId ] = ( int ) ( event.getX ( pointerIndex ) * scaleX );
+                        touchEvent.y = touchY[ pointerId ] = ( int ) ( event.getY ( pointerIndex ) * scaleY );
                         touchEventsBuffer.add ( touchEvent );
                     }
                     break;
             }
+
             return true;
         }
     }
@@ -115,9 +115,13 @@ public class MultiTouchHandler implements TouchHandler
         synchronized ( this )
         {
             if ( pointer < 0 || pointer >= 20 )
-            { return 0; }
+            {
+                return 0;
+            }
             else
-            { return touchX[ pointer ]; }
+            {
+                return touchX[ pointer ];
+            }
         }
     }
 
@@ -127,9 +131,13 @@ public class MultiTouchHandler implements TouchHandler
         synchronized ( this )
         {
             if ( pointer < 0 || pointer >= 20 )
-            { return 0; }
+            {
+                return 0;
+            }
             else
-            { return touchY[ pointer ]; }
+            {
+                return touchY[ pointer ];
+            }
         }
     }
 

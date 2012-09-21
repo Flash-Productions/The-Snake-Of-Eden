@@ -1,9 +1,9 @@
 package com.flashproductions.android.games.framework.impl;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/7/12
- * Time: 12:12 AM
+ * Time: 12:12 PM
  */
 
 import android.content.Context;
@@ -23,10 +23,14 @@ public class AndroidInput implements Input
     {
         accelHandler = new AccelerometerHandler ( context );
         keyHandler = new KeyboardHandler ( view );
-        if ( VERSION.SDK_INT < 5 )
-        { touchHandler = new SingleTouchHandler ( view, scaleX, scaleY ); }
+        if ( Integer.parseInt ( VERSION.SDK ) < 5 )
+        {
+            touchHandler = new SingleTouchHandler ( view, scaleX, scaleY );
+        }
         else
-        { touchHandler = new MultiTouchHandler ( view, scaleX, scaleY ); }
+        {
+            touchHandler = new MultiTouchHandler ( view, scaleX, scaleY );
+        }
     }
 
     @Override

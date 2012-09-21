@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/2/12
  * Time: 9:35 PM
  */
@@ -22,7 +22,6 @@ public class Pool<T>
 
     public Pool ( PoolObjectFactory<T> factory, int maxSize )
     {
-
         this.factory = factory;
         this.maxSize = maxSize;
         this.freeObjects = new ArrayList<T> ( maxSize );

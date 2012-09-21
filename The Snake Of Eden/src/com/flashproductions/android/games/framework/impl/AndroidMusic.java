@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework.impl;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/1/12
  * Time: 12:07 PM
  */
@@ -16,7 +16,8 @@ import java.io.IOException;
 public class AndroidMusic implements Music, OnCompletionListener
 {
     MediaPlayer mediaPlayer;
-    boolean isPrepared = false;
+    public boolean isPrepared = false;
+    public boolean isDisposed = false;
 
     public AndroidMusic ( AssetFileDescriptor assetDescriptor )
     {
@@ -27,6 +28,7 @@ public class AndroidMusic implements Music, OnCompletionListener
                                         assetDescriptor.getLength () );
             mediaPlayer.prepare ();
             isPrepared = true;
+            isDisposed = false;
             mediaPlayer.setOnCompletionListener ( this );
         }
         catch ( Exception e )
@@ -39,8 +41,12 @@ public class AndroidMusic implements Music, OnCompletionListener
     public void dispose ()
     {
         if ( mediaPlayer.isPlaying () )
-        { mediaPlayer.stop (); }
+        {
+            mediaPlayer.stop ();
+        }
         mediaPlayer.release ();
+
+        isDisposed = true;
     }
 
     @Override
@@ -65,21 +71,27 @@ public class AndroidMusic implements Music, OnCompletionListener
     public void pause ()
     {
         if ( mediaPlayer.isPlaying () )
-        { mediaPlayer.pause (); }
+        {
+            mediaPlayer.pause ();
+        }
     }
 
     @Override
     public void play ()
     {
         if ( mediaPlayer.isPlaying () )
-        { return; }
+        {
+            return;
+        }
 
         try
         {
             synchronized ( this )
             {
                 if ( ! isPrepared )
-                { mediaPlayer.prepare (); }
+                {
+                    mediaPlayer.prepare ();
+                }
                 mediaPlayer.start ();
             }
         }
@@ -105,6 +117,7 @@ public class AndroidMusic implements Music, OnCompletionListener
         mediaPlayer.setVolume ( volume, volume );
     }
 
+    @Override
     public void stop ()
     {
         mediaPlayer.stop ();
@@ -121,5 +134,11 @@ public class AndroidMusic implements Music, OnCompletionListener
         {
             isPrepared = false;
         }
+    }
+
+    @Override
+    public boolean isDisposed ()
+    {
+        return isDisposed;
     }
 }

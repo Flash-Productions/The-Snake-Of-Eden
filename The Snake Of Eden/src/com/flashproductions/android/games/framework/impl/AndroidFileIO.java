@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework.impl;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/1/12
  * Time: 11:24 AM
  */

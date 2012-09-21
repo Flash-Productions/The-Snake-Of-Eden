@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework.impl;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/1/12
  * Time: 11:42 AM
  */
@@ -30,31 +30,31 @@ public class AndroidAudio implements Audio
     }
 
     @Override
-    public Music newMusic ( String fileName )
+    public Music newMusic ( String filename )
     {
         try
         {
-            AssetFileDescriptor assetDescriptor = assets.openFd ( fileName );
+            AssetFileDescriptor assetDescriptor = assets.openFd ( filename );
             return new AndroidMusic ( assetDescriptor );
         }
         catch ( IOException e )
         {
-            throw new RuntimeException ( "Couldn't load music '" + fileName + "'" );
+            throw new RuntimeException ( "Couldn't load music '" + filename + "'" );
         }
     }
 
     @Override
-    public Sound newSound ( String fileName )
+    public Sound newSound ( String filename )
     {
         try
         {
-            AssetFileDescriptor assetDescriptor = assets.openFd ( fileName );
-            int soundID = soundPool.load ( assetDescriptor, 0 );
-            return new AndroidSound ( soundPool, soundID );
+            AssetFileDescriptor assetDescriptor = assets.openFd ( filename );
+            int soundId = soundPool.load ( assetDescriptor, 0 );
+            return new AndroidSound ( soundPool, soundId );
         }
         catch ( IOException e )
         {
-            throw new RuntimeException ( "Couldn't load sound '" + fileName + "'" );
+            throw new RuntimeException ( "Couldn't load sound '" + filename + "'" );
         }
     }
 }

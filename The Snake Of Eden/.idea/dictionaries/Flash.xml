@@ -3,7 +3,16 @@
     <words>
       <w>accel</w>
       <w>framebuffer</w>
+      <w>gameover</w>
+      <w>headdown</w>
+      <w>headleft</w>
+      <w>headright</w>
+      <w>headup</w>
+      <w>highscore</w>
+      <w>highscores</w>
+      <w>mainmenu</w>
       <w>pixmap</w>
+      <w>thesnakeofeden</w>
     </words>
   </dictionary>
 </component>

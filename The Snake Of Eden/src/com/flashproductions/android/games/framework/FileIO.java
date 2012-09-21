@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/1/12
  * Time: 12:44 AM
  */
@@ -16,5 +16,5 @@ public interface FileIO
 
     public InputStream readFile ( String fileName ) throws IOException;
 
-    public OutputStream writeFile ( String FileName ) throws IOException;
+    public OutputStream writeFile ( String fileName ) throws IOException;
 }

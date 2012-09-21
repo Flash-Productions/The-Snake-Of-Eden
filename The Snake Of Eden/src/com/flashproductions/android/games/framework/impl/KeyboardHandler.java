@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework.impl;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/4/12
  * Time: 12:15 AM
  */
@@ -42,24 +42,30 @@ public class KeyboardHandler implements OnKeyListener
     public boolean onKey ( View v, int keyCode, android.view.KeyEvent event )
     {
         if ( event.getAction () == android.view.KeyEvent.ACTION_MULTIPLE )
-        { return false; }
+        {
+            return false;
+        }
 
         synchronized ( this )
         {
             KeyEvent keyEvent = keyEventPool.newObject ();
             keyEvent.keyCode = keyCode;
             keyEvent.keyChar = ( char ) event.getUnicodeChar ();
-            if ( event.getAction () == android.view.KeyEvent.ACTION_UP )
+            if ( event.getAction () == android.view.KeyEvent.ACTION_DOWN )
             {
                 keyEvent.type = KeyEvent.KEY_DOWN;
                 if ( keyCode > 0 && keyCode < 127 )
-                { pressedKeys[ keyCode ] = true; }
+                {
+                    pressedKeys[ keyCode ] = true;
+                }
             }
             if ( event.getAction () == android.view.KeyEvent.ACTION_UP )
             {
                 keyEvent.type = KeyEvent.KEY_UP;
                 if ( keyCode > 0 && keyCode < 127 )
-                { pressedKeys[ keyCode ] = false; }
+                {
+                    pressedKeys[ keyCode ] = false;
+                }
             }
             keyEventsBuffer.add ( keyEvent );
         }
@@ -69,7 +75,6 @@ public class KeyboardHandler implements OnKeyListener
     public boolean isKeyPressed ( int keyCode )
     {
         return ! ( keyCode < 0 || keyCode > 127 ) && pressedKeys[ keyCode ];
-
     }
 
     public List<KeyEvent> getKeyEvents ()

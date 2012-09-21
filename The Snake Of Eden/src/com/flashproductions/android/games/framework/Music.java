@@ -1,10 +1,11 @@
 package com.flashproductions.android.games.framework;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/1/12
  * Time: 1:28 AM
  */
+
 public interface Music
 {
     public void play ();
@@ -22,6 +23,8 @@ public interface Music
     public boolean isStopped ();
 
     public boolean isLooping ();
+
+    public boolean isDisposed();
 
     public void dispose ();
 }

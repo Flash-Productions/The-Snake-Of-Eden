@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayoutPreviewToolWindow">
+    <option name="state">
+      <GlobalState>
+        <option name="device" value="2.7in QVGA" />
+        <option name="dockMode" value="" />
+        <option name="nightMode" value="notnight" />
+        <option name="targetHashString" value="android-15" />
+        <option name="theme" value="Theme" />
+      </GlobalState>
+    </option>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6da350bf-146f-4793-a426-39d5b1716bbf" name="Default" comment="" />
     <ignored path="The Snake Of Eden.iws" />
@@ -11,11 +22,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
   </component>
   <component name="DebuggerManager">
     <breakpoint_any>
@@ -58,10 +78,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidGame.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidGame.java">
+      <file leaf-file-name="World.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="35" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.5050505">
+            <state line="26" column="4" selection-start="675" selection-end="675" vertical-scroll-proportion="0.63780665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Snake.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/Snake.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="13" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/GameScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="301" column="9" selection-start="8164" selection-end="8164" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,30 +121,58 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AccelerometerHandler.java" />
         <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidMusic.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidSound.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidAudio.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidFileIO.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/Pool.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/TouchHandler.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidInput.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidPixmap.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidFastRenderView.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidGraphics.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/KeyboardHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/MultiTouchHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/SingleTouchHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Pool.java" />
         <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidGame.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/HelpScreen.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/HelpScreen2.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/HelpScreen3.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/HighscoreScreen.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/TheSnakeOfEdenGame.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/Settings.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/Assets.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Game.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/MainMenuScreen.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/Snake.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/GameScreen.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/LoadingScreen.java" />
+        <option value="$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/World.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
     <option name="height" value="886" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AndroidLintManifestOrder</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -136,12 +202,16 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
+      <pane id="PackagesPane">
+        <subPane>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="The Snake Of Eden" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="The Snake Of Eden" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -178,7 +248,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
+              <option name="myItemId" value="games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesnakeofeden" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -196,11 +270,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
+              <option name="myItemId" value="games" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -214,40 +284,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="The Snake Of Eden" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="The Snake Of Eden" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thesnakeofeden" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="The Snake Of Eden" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="The Snake Of Eden" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -255,17 +303,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/gen/com/flashproductions/android/games" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="ExportedApkPath" value="C:\Users\Flash\Desktop\dsa.apk" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.lookFeel" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
+    <property name="ExportedModule" value="The Snake Of Eden" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="AndroidRunProguardForReleaseBuild" value="false" />
+    <property name="KeystoreLocation" value="C:\android\Flash_Productions.keystore" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="2_2_Default_HVGA" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="1_5" />
+    <property name="KeyAlias" value="flash productions" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -273,10 +329,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Flash\Flash-Productions\The-Snake-Of-Eden\The Snake Of Eden\assets" />
+      <recent name="C:\Users\Flash\Flash-Productions\The-Snake-Of-Eden\The Snake Of Eden\res\drawable" />
       <recent name="C:\Users\Flash\IdeaProjects\The Snake Of Eden\res\drawable" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.flashproductions.android.games" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Flash\Flash-Productions\The-Snake-Of-Eden\The Snake Of Eden\res\drawable-mdpi" />
+      <recent name="C:\Users\Flash\Flash-Productions\The-Snake-Of-Eden\The Snake Of Eden\res\drawable-hdpi" />
+      <recent name="C:\Users\Flash\Flash-Productions\The-Snake-Of-Eden\The Snake Of Eden\res\drawable-ldpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.The Snake Of Eden">
@@ -444,18 +507,20 @@
     </configuration>
     <configuration default="false" name="The Snake Of Eden" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="The Snake Of Eden" />
-      <option name="ACTIVITY_CLASS" value="com.flashproductions.android.games.MyActivity" />
+      <option name="ACTIVITY_CLASS" value="com.flashproductions.android.games.thesnakeofeden.TheSnakeOfEdenGame" />
       <option name="MODE" value="specific_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
+      <option name="WIPE_USER_DATA" value="true" />
       <option name="DISABLE_BOOT_ANIMATION" value="false" />
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -494,33 +559,54 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.4977463" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946485" sideWeight="0.69166666" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.4977463" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48472223" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.4977463" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5003224" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.4977463" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.4977463" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.49258542" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1792392" sideWeight="0.99722993" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946485" sideWeight="0.6722222" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997421" sideWeight="0.6722222" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40816328" sideWeight="0.65537554" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34462446" sideWeight="0.49516442" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946485" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -630,120 +716,202 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidSound.java">
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="241" selection-end="241" vertical-scroll-proportion="0.24531025">
+        <state line="19" column="13" selection-start="518" selection-end="518" vertical-scroll-proportion="-2.82684" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidFileIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="301" selection-end="301" vertical-scroll-proportion="0.14141414" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidAudio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="540" selection-end="540" vertical-scroll-proportion="-0.15295815" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AccelerometerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="333" selection-end="333" vertical-scroll-proportion="-0.38157895" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidFastRenderView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="13" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/MainMenuScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="9" selection-start="3595" selection-end="3595" vertical-scroll-proportion="2.6248195">
+          <folding>
+            <element signature="method#MainMenuScreen#0;class#MainMenuScreen#0" expanded="false" />
+            <element signature="method#pause#0;class#MainMenuScreen#0" expanded="false" />
+            <element signature="method#resume#0;class#MainMenuScreen#0" expanded="false" />
+            <element signature="method#dispose#0;class#MainMenuScreen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-15/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="16" selection-start="758" selection-end="758" vertical-scroll-proportion="0.33168316">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/KeyboardHandler.java">
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-15/android.jar!/android/os/Handler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="8" selection-start="2252" selection-end="2252" vertical-scroll-proportion="0.4848485">
+        <state line="17" column="16" selection-start="585" selection-end="585" vertical-scroll-proportion="0.33035713">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/MultiTouchHandler.java">
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-15/android.jar!/android/app/Instrumentation.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="12" selection-start="4855" selection-end="4855" vertical-scroll-proportion="0.6810967">
+        <state line="111" column="16" selection-start="6167" selection-end="6167" vertical-scroll-proportion="0.33035713">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/SingleTouchHandler.java">
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-15/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="12" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.6810967">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/TouchHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="511" selection-end="511" vertical-scroll-proportion="0.46608946">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Audio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="148" selection-end="148" vertical-scroll-proportion="0.22077923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/FileIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="234" selection-end="234" vertical-scroll-proportion="0.24531025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="146" selection-end="146" vertical-scroll-proportion="0.17171717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Graphics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="146" selection-end="146" vertical-scroll-proportion="0.17171717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="173" selection-end="173" vertical-scroll-proportion="0.24531025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Music.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="146" selection-end="146" vertical-scroll-proportion="0.17171717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Pixmap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="223" selection-end="223" vertical-scroll-proportion="0.24531025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Pool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="16" selection-start="688" selection-end="688" vertical-scroll-proportion="0.4848485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="151" selection-end="151" vertical-scroll-proportion="0.17171717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/Sound.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="146" selection-end="146" vertical-scroll-proportion="0.17171717">
+        <state line="52" column="19" selection-start="2293" selection-end="2293" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/framework/impl/AndroidGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="35" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.5050505">
+        <state line="57" column="0" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/TheSnakeOfEdenGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="376" selection-end="376" vertical-scroll-proportion="0.42910448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/LoadingScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="25" selection-start="538" selection-end="538" vertical-scroll-proportion="0.15250544">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="301" column="9" selection-start="8164" selection-end="8164" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/flashproductions/android/games/thesnakeofeden/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="4" selection-start="675" selection-end="675" vertical-scroll-proportion="0.63780665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android (The Snake Of Eden)|Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>The Snake Of Eden</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

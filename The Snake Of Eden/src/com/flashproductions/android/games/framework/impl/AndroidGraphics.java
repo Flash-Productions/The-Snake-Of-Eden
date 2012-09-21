@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework.impl;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/8/12
  * Time: 2:27 AM
  */
@@ -39,11 +39,20 @@ public class AndroidGraphics implements Graphics
     {
         Config config;
         if ( format == PixmapFormat.RGB565 )
-        { config = Config.RGB_565; }
-        else if ( format == PixmapFormat.ARGB4444 )
-        { config = Config.ARGB_4444; }
+        {
+            config = Config.RGB_565;
+        }
         else
-        { config = Config.ARGB_8888; }
+        {
+            if ( format == PixmapFormat.ARGB4444 )
+            {
+                config = Config.ARGB_4444;
+            }
+            else
+            {
+                config = Config.ARGB_8888;
+            }
+        }
 
         Options options = new Options ();
         options.inPreferredConfig = config;
@@ -55,7 +64,9 @@ public class AndroidGraphics implements Graphics
             in = assets.open ( fileName );
             bitmap = BitmapFactory.decodeStream ( in );
             if ( bitmap == null )
-            { throw new RuntimeException ( "Couldn't load bitmap from asset '" + fileName + "'" ); }
+            {
+                throw new RuntimeException ( "Couldn't load bitmap from asset '" + fileName + "'" );
+            }
         }
         catch ( IOException e )
         {
@@ -71,17 +82,25 @@ public class AndroidGraphics implements Graphics
                 }
                 catch ( IOException ignored )
                 {
-
                 }
             }
         }
 
         if ( bitmap.getConfig () == Config.RGB_565 )
-        { format = PixmapFormat.RGB565; }
-        else if ( bitmap.getConfig () == Config.ARGB_4444 )
-        { format = PixmapFormat.ARGB4444; }
+        {
+            format = PixmapFormat.RGB565;
+        }
         else
-        { format = PixmapFormat.ARGB8888; }
+        {
+            if ( bitmap.getConfig () == Config.ARGB_4444 )
+            {
+                format = PixmapFormat.ARGB4444;
+            }
+            else
+            {
+                format = PixmapFormat.ARGB8888;
+            }
+        }
 
         return new AndroidPixmap ( bitmap, format );
     }
@@ -111,7 +130,7 @@ public class AndroidGraphics implements Graphics
     {
         paint.setColor ( color );
         paint.setStyle ( Style.FILL );
-        canvas.drawRect ( x, y, x + width - 1, y + height - 1, paint );
+        canvas.drawRect ( x, y, x + width - 1, y + width - 1, paint );
     }
 
     @Override

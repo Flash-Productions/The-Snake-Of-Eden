@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 8/31/12
  * Time: 10:59 PM
  */
@@ -18,6 +18,19 @@ public interface Input
         public int  type;
         public int  keyCode;
         public char keyChar;
+
+        public String toString ()
+        {
+            StringBuilder builder = new StringBuilder ();
+            if ( type == KEY_DOWN )
+            { builder.append ( "key down, " ); }
+            else
+            { builder.append ( "key up, " ); }
+            builder.append ( keyCode );
+            builder.append ( "," );
+            builder.append ( keyChar );
+            return builder.toString ();
+        }
     }
 
     public static class TouchEvent
@@ -29,6 +42,23 @@ public interface Input
         public int type;
         public int x, y;
         public int pointer;
+
+        public String toString ()
+        {
+            StringBuilder builder = new StringBuilder ();
+            if ( type == TOUCH_DOWN )
+            { builder.append ( "touch down, " ); }
+            else if ( type == TOUCH_DRAGGED )
+            { builder.append ( "touch dragged, " ); }
+            else
+            { builder.append ( "touch up, " ); }
+            builder.append ( pointer );
+            builder.append ( "," );
+            builder.append ( x );
+            builder.append ( "," );
+            builder.append ( y );
+            return builder.toString ();
+        }
     }
 
     public boolean isKeyPressed ( int keyCode );
@@ -48,5 +78,4 @@ public interface Input
     public List<KeyEvent> getKeyEvents ();
 
     public List<TouchEvent> getTouchEvents ();
-
 }

@@ -1,7 +1,7 @@
 package com.flashproductions.android.games.framework.impl;
 
 /**
- * Created by Flash Productions.
+ * Created by Flash Productions
  * Date: 9/9/12
  * Time: 1:47 AM
  */
@@ -71,7 +71,7 @@ public class AndroidFastRenderView extends SurfaceView implements Runnable
             }
             catch ( InterruptedException e )
             {
-                //retry
+                // retry
             }
         }
     }
