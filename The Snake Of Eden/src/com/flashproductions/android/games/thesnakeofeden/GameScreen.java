@@ -126,7 +126,7 @@ public class GameScreen extends Screen
     private void updatePaused ( List<TouchEvent> touchEvents )
     {
 
-        if ( Assets.gameMusic.isPlaying () )
+        if ( Settings.musicEnabled && Assets.gameMusic.isPlaying () )
         {
             Assets.gameMusic.stop ();
         }
@@ -152,7 +152,10 @@ public class GameScreen extends Screen
                         {
                             Assets.click.play ( 1 );
                         }
-                        Assets.gameMusic.dispose();
+                        if ( Settings.musicEnabled && Assets.gameMusic.isStopped () )
+                        {
+                            Assets.gameMusic.dispose ();
+                        }
                         game.setScreen ( new MainMenuScreen ( game ) );
                         return;
                     }
@@ -163,6 +166,10 @@ public class GameScreen extends Screen
 
     private void updateGameOver ( List<TouchEvent> touchEvents )
     {
+        if ( Settings.musicEnabled && Assets.gameMusic.isPlaying () )
+        {
+            Assets.gameMusic.stop ();
+        }
         for ( TouchEvent event : touchEvents )
         {
             if ( event.type == TouchEvent.TOUCH_UP )
@@ -173,8 +180,13 @@ public class GameScreen extends Screen
                     {
                         Assets.click.play ( 1 );
                     }
+                    if ( Settings.musicEnabled && Assets.gameMusic.isStopped () )
+                    {
+                        Assets.gameMusic.dispose ();
+                    }
                     game.setScreen ( new MainMenuScreen ( game ) );
                     return;
+
                 }
             }
         }
@@ -309,6 +321,11 @@ public class GameScreen extends Screen
         g.drawPixmap ( Assets.gameOver, 62, 100 );
         g.drawPixmap ( Assets.buttons, 128, 200, 0, 128, 64, 64 );
         g.drawLine ( 0, 416, 480, 416, Color.BLACK );
+
+        if ( Settings.musicEnabled && Assets.gameMusic.isPlaying () )
+        {
+            Assets.gameMusic.stop ();
+        }
     }
 
     public void drawText ( Graphics g, String line, int x, int y )
@@ -356,9 +373,12 @@ public class GameScreen extends Screen
             Settings.save ( game.getFileIO () );
         }
 
-        if ( Assets.gameMusic.isPlaying () )
+        if ( ! Assets.gameMusic.isDisposed () )
         {
-            Assets.gameMusic.stop ();
+            if ( Settings.musicEnabled && Assets.gameMusic.isPlaying () )
+            {
+                Assets.gameMusic.stop ();
+            }
         }
     }
 
@@ -371,9 +391,8 @@ public class GameScreen extends Screen
     @Override
     public void dispose ()
     {
-        if ( Settings.musicEnabled && Assets.gameMusic.isPlaying () )
+        if ( ! Assets.gameMusic.isDisposed () && Settings.musicEnabled )
         {
-            Assets.gameMusic.stop ();
             Assets.gameMusic.dispose ();
         }
     }

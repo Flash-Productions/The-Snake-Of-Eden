@@ -67,7 +67,7 @@ public class MainMenuScreen extends Screen
                         Assets.click.play ( 1 );
                     }
 
-                    if ( Assets.menuMusic.isPlaying () )
+                    if ( Settings.musicEnabled && Assets.menuMusic.isPlaying () )
                     {
                         Assets.menuMusic.stop ();
                     }
@@ -142,7 +142,7 @@ public class MainMenuScreen extends Screen
     @Override
     public void pause ()
     {
-        if ( Assets.menuMusic.isPlaying () )
+        if ( Settings.musicEnabled && Assets.menuMusic.isPlaying () )
         {
             Assets.menuMusic.stop ();
         }

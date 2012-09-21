@@ -24,7 +24,7 @@ public class World
     boolean fields[][] = new boolean[ WORLD_WIDTH ][ WORLD_HEIGHT ];
     Random  random     = new Random ();
     float   tickTime   = 0;
-    float tick = TICK_INITIAL;
+    float   tick       = TICK_INITIAL;
 
     public World ()
     {
