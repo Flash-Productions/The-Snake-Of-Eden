@@ -64,7 +64,7 @@ public class HelpScreen3 extends Screen
         Graphics g = game.getGraphics ();
         g.drawPixmap ( Assets.gameBackground, 0, 0 );
         g.drawPixmap ( Assets.help3, 64, 100 );
-        g.drawPixmap ( Assets.buttons, 256, 416, 0, 128, 64, 64 );
+        g.drawPixmap ( Assets.buttons, 256, 416, 0, 192, 64, 64 );
         g.drawPixmap ( Assets.buttons, 0, 416, 64, 64, 64, 64 );
         if ( Settings.musicEnabled && Assets.menuMusic.isStopped () )
         {

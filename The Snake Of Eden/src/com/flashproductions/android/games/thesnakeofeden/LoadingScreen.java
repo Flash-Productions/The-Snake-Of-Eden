@@ -6,6 +6,7 @@ package com.flashproductions.android.games.thesnakeofeden;
  * Time: 4:29 PM
  */
 
+
 import com.flashproductions.android.games.framework.Game;
 import com.flashproductions.android.games.framework.Graphics;
 import com.flashproductions.android.games.framework.Graphics.PixmapFormat;
@@ -16,6 +17,7 @@ public class LoadingScreen extends Screen
     public LoadingScreen ( Game game )
     {
         super ( game );
+
     }
 
 
@@ -33,6 +35,7 @@ public class LoadingScreen extends Screen
         g.drawPixmap ( Assets.companyLogo, 0, 0 );
         delay += 1;
 
+        Assets.facebook = g.newPixmap ( "facebook.png", PixmapFormat.ARGB4444 );
         Assets.logo = g.newPixmap ( "logo.png", PixmapFormat.ARGB8888 );
         Assets.mainMenu = g.newPixmap ( "mainmenu.png", PixmapFormat.ARGB8888 );
         Assets.buttons = g.newPixmap ( "buttons.png", PixmapFormat.ARGB8888 );
@@ -61,7 +64,7 @@ public class LoadingScreen extends Screen
         Assets.menuMusic = game.getAudio ().newMusic ( "menu-music.ogg" );
 
 
-        if ( delay > 3 )
+        if ( delay > 8 )
         {
             Settings.load ( game.getFileIO () );
             game.setScreen ( new MainMenuScreen ( game ) );
@@ -72,7 +75,6 @@ public class LoadingScreen extends Screen
     @Override
     public void present ( float deltaTime )
     {
-
 
 
     }

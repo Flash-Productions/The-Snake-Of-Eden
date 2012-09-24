@@ -19,8 +19,14 @@ public class MainMenuScreen extends Screen
     public MainMenuScreen ( Game game )
     {
         super ( game );
+        //Looper.prepare();
 
     }
+
+
+    //private Intent fbIntent =
+    // new Intent ( "android.intent.action.VIEW", Uri.parse ( "http://www.facebook.com/FlashPros" ) );
+    //private Activity activity = new Activity();
 
 
     @Override
@@ -34,6 +40,11 @@ public class MainMenuScreen extends Screen
         {
             if ( event.type == TouchEvent.TOUCH_UP )
             {
+                if ( inBounds ( event, 0, 0, 24, 24 ) )
+                {
+
+                    // activity.startActivity(fbIntent);
+                }
                 if ( inBounds ( event, 0, g.getHeight () - 64, 64, 64 ) )
                 {
                     Settings.soundEnabled = ! Settings.soundEnabled;
@@ -107,6 +118,7 @@ public class MainMenuScreen extends Screen
         Graphics g = game.getGraphics ();
 
         g.drawPixmap ( Assets.menuBackground, 0, 0 );
+        g.drawPixmap ( Assets.facebook, 0, 0 );
         g.drawPixmap ( Assets.logo, 32, 20 );
         g.drawPixmap ( Assets.mainMenu, 64, 220 );
 
@@ -127,13 +139,13 @@ public class MainMenuScreen extends Screen
 
         if ( Settings.musicEnabled )
         {
-            g.drawPixmap ( Assets.buttons, 256, 416, 0, 192, 64, 64 );
+            g.drawPixmap ( Assets.buttons, 256, 416, 0, 256, 64, 64 );
             Assets.menuMusic.play ();
             Assets.menuMusic.setLooping ( true );
         }
         else
         {
-            g.drawPixmap ( Assets.buttons, 256, 416, 64, 192, 64, 64 );
+            g.drawPixmap ( Assets.buttons, 256, 416, 64, 256, 64, 64 );
         }
 
 

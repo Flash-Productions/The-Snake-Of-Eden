@@ -33,6 +33,7 @@ public class Assets
     public static Pixmap apple1;
     public static Pixmap apple2;
     public static Pixmap apple3;
+    public static Pixmap facebook;
 
     public static Sound click;
     public static Sound eat;

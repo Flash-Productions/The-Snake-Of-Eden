@@ -295,10 +295,26 @@ public class GameScreen extends Screen
     {
         Graphics g = game.getGraphics ();
 
-        g.drawPixmap ( Assets.buttons, 0, 0, 64, 128, 64, 64 );
+        g.drawPixmap ( Assets.buttons, 0, 0, 64, 192, 64, 64 );
         g.drawLine ( 0, 416, 480, 416, Color.BLACK );
-        g.drawPixmap ( Assets.buttons, 0, 416, 64, 64, 64, 64 );
-        g.drawPixmap ( Assets.buttons, 256, 416, 0, 64, 64, 64 );
+
+        Snake snake = world.snake;
+
+        if ( snake.direction == Snake.RIGHT )
+        {
+            g.drawPixmap ( Assets.buttons, 0, 416, 0, 128, 64, 64 );
+            g.drawPixmap ( Assets.buttons, 256, 416, 64, 128, 64, 64 );
+        }
+        else if ( snake.direction == Snake.LEFT )
+        {
+            g.drawPixmap ( Assets.buttons, 0, 416, 64, 128, 64, 64 );
+            g.drawPixmap ( Assets.buttons, 256, 416, 0, 128, 64, 64 );
+        }
+        else
+        {
+            g.drawPixmap ( Assets.buttons, 0, 416, 64, 64, 64, 64 );
+            g.drawPixmap ( Assets.buttons, 256, 416, 0, 64, 64, 64 );
+        }
     }
 
     private void drawPausedUI ()
@@ -319,7 +335,7 @@ public class GameScreen extends Screen
         Graphics g = game.getGraphics ();
 
         g.drawPixmap ( Assets.gameOver, 62, 100 );
-        g.drawPixmap ( Assets.buttons, 128, 200, 0, 128, 64, 64 );
+        g.drawPixmap ( Assets.buttons, 128, 200, 0, 192, 64, 64 );
         g.drawLine ( 0, 416, 480, 416, Color.BLACK );
 
         if ( Settings.musicEnabled && Assets.gameMusic.isPlaying () )
