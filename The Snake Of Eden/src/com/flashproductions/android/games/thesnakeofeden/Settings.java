@@ -14,6 +14,7 @@ public class Settings
 {
     public static boolean soundEnabled = true;
     public static boolean musicEnabled = true;
+
     public static int[]   highscores   = new int[] { 100, 80, 50, 30, 10 };
 
     public static void load ( FileIO files )

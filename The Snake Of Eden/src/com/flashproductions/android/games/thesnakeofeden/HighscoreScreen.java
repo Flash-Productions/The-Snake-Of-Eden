@@ -65,7 +65,7 @@ public class HighscoreScreen extends Screen
 
         g.drawPixmap ( Assets.buttons, 0, 416, 64, 64, 64, 64 );
 
-        if ( Settings.soundEnabled && Assets.menuMusic.isStopped () )
+        if ( Settings.musicEnabled && Assets.menuMusic.isStopped () )
         { Assets.menuMusic.play (); }
     }
 

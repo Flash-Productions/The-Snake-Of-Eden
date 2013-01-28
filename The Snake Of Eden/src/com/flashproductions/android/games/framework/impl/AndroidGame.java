@@ -8,6 +8,7 @@ package com.flashproductions.android.games.framework.impl;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
@@ -102,6 +103,12 @@ public abstract class AndroidGame extends Activity implements Game
     public Audio getAudio ()
     {
         return audio;
+    }
+
+    @Override
+    public void start ( Intent intent )
+    {
+        startActivity ( intent );
     }
 
     @Override

@@ -6,6 +6,9 @@ package com.flashproductions.android.games.thesnakeofeden;
  * Time: 9:43 PM
  */
 
+import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import com.flashproductions.android.games.framework.Game;
 import com.flashproductions.android.games.framework.Graphics;
 import com.flashproductions.android.games.framework.Input.TouchEvent;
@@ -19,19 +22,17 @@ public class MainMenuScreen extends Screen
     public MainMenuScreen ( Game game )
     {
         super ( game );
-        //Looper.prepare();
 
     }
 
 
-    //private Intent fbIntent =
-    // new Intent ( "android.intent.action.VIEW", Uri.parse ( "http://www.facebook.com/FlashPros" ) );
-    //private Activity activity = new Activity();
+
 
 
     @Override
     public void update ( float deltaTime )
     {
+
         Graphics g = game.getGraphics ();
         List<TouchEvent> touchEvents = game.getInput ().getTouchEvents ();
         game.getInput ().getKeyEvents ();
@@ -42,8 +43,10 @@ public class MainMenuScreen extends Screen
             {
                 if ( inBounds ( event, 0, 0, 24, 24 ) )
                 {
+                    Intent fbIntent =
+                            new Intent ( Intent.ACTION_VIEW, Uri.parse ( "http://www.facebook.com/FlashPros" ) );
+                    game.start ( fbIntent );
 
-                    // activity.startActivity(fbIntent);
                 }
                 if ( inBounds ( event, 0, g.getHeight () - 64, 64, 64 ) )
                 {

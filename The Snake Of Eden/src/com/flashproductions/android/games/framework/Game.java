@@ -1,5 +1,7 @@
 package com.flashproductions.android.games.framework;
 
+import android.content.Intent;
+
 /**
  * Created by Flash Productions
  * Date: 9/1/12
@@ -21,4 +23,6 @@ public interface Game
     public Screen getCurrentScreen ();
 
     public Screen getStartScreen ();
+
+    public void start(Intent intent);
 }
